@@ -1,152 +1,86 @@
+/* Renkler */
+h1 {
+  color: #000000;
+}
+
+p {
+  color: #707070;
+}
+
 body {
-  margin: 0;
-  padding: 0;
+  background-color: #F7F7F7;
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
 }
 
-header {
-  background-color: #fff;
-  color: #333;
+nav {
+  background-color: #2F4F4F;
+}
+
+/* Tasarım */
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
+  padding: 20px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo h1 {
-  margin: 0;
-  margin-left: 10px;
+#logo {
   font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+#menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin-right: 20px;
 }
 
-nav li {
-  margin: 0 10px;
-  border-left: 1px solid #ccc;
-  padding: 0 10px;
-  position: relative;
-}
-
-nav li:first-child {
-  border-left: none;
-}
-
-nav .dropdown {
-  position: static;
-}
-
-nav .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 20px;
-  right: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  z-index: 1;
-}
-
-nav .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-nav a {
-  color: #333;
+#menu a {
+  color: white;
   text-decoration: none;
-}
-
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 20px;
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-section h2 {
-  margin: 0;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-section ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-section li {
-  margin: 0 0 20px 0;
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: 100%;
-  border-radius: 5px;
-}
-
-section li img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-section .post-content {
-  display: flex;
-  flex-direction: column;
-}
-
-section .post-content h4 {
-  margin: 0;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-section .post-content .post-actions {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-section .post-content .post-actions button {
-  background-color: transparent;
-  border: none;
-  color: #FFA500;
-  margin-right: 10px;
-  cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
 }
 
-section .post-content .post-actions button i {
-  margin-right: 5px;
+#menu a:hover {
+  color: #C0C0C0;
+  border-bottom: 2px solid #C0C0C0;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
+#news {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.news-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.news-card h2 {
   padding: 10px;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2F4F4F;
+}
+
+.news-card p {
+  padding: 10px;
+  font-size: 16px;
+  color: #707070;
 }
