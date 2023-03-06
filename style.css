@@ -5,16 +5,23 @@ body {
 }
 
 header {
-  background-color: #FFA500;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
 }
 
-header h1 {
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
   margin: 0;
+  margin-left: 10px;
 }
 
 nav ul {
@@ -28,10 +35,35 @@ nav ul {
 
 nav li {
   margin: 0 10px;
+  border-left: 1px solid #ccc;
+  padding: 0 10px;
+  position: relative;
+}
+
+nav li:first-child {
+  border-left: none;
+}
+
+nav .dropdown {
+  position: static;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 nav a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -54,22 +86,40 @@ section ul {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
 section li {
-  margin: 0 10px;
+  margin: 0 10px 20px 10px;
   border: 1px solid #ccc;
   padding: 10px;
   max-width: 300px;
 }
 
-section h3 {
+section li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+section .post-content {
+  display: flex;
+  flex-direction: column;
+}
+
+section .post-content h4 {
   margin: 0;
 }
 
-.like-comment button {
+section .post-content .post-actions {
+  display: flex;
+  align-items: center;
+}
+
+section .post-content .post-actions button {
   background-color: transparent;
   border: none;
   color: #FFA500;
@@ -77,6 +127,13 @@ section h3 {
   cursor: pointer;
 }
 
-.like-comment button i {
+section .post-content .post-actions button i {
   margin-right: 5px;
+}
+
+footer {
+  background-color: #FFA500;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
