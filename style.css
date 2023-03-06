@@ -2,11 +2,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
 }
 
 header {
   background-color: #fff;
-  color: #000;
+  color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +24,7 @@ header {
 .logo h1 {
   margin: 0;
   margin-left: 10px;
+  font-size: 24px;
 }
 
 nav ul {
@@ -63,7 +66,7 @@ nav .dropdown:hover .dropdown-content {
 }
 
 nav a {
-  color: #000;
+  color: #333;
   text-decoration: none;
 }
 
@@ -75,10 +78,16 @@ main {
 
 section {
   margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 section h2 {
   margin: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 section ul {
@@ -92,17 +101,16 @@ section ul {
 }
 
 section li {
-  margin: 0 10px 20px 10px;
+  margin: 0 0 20px 0;
   border: 1px solid #ccc;
   padding: 10px;
-  max-width: 300px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 section li img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 section .post-content {
@@ -112,11 +120,14 @@ section .post-content {
 
 section .post-content h4 {
   margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 section .post-content .post-actions {
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 
 section .post-content .post-actions button {
@@ -125,6 +136,7 @@ section .post-content .post-actions button {
   color: #FFA500;
   margin-right: 10px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 section .post-content .post-actions button i {
@@ -132,8 +144,9 @@ section .post-content .post-actions button i {
 }
 
 footer {
-  background-color: #FFA500;
+  background-color: #333;
   color: #fff;
   text-align: center;
   padding: 10px;
+  font-size: 14px;
 }
