@@ -6,13 +6,25 @@
   </head>
   <body>
     <header>
-      <h1>AI Social Media</h1>
+      <div class="logo">
+        <svg xmlns="<http://www.w3.org/2000/svg>" viewBox="0 0 24 24">
+          <path fill="#000" d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zm2.237 18.938c-.284.284-.662.442-1.063.442s-.78-.158-1.064-.442l-1.238-1.238-3.404-3.404c-.292-.292-.442-.678-.442-1.079s.15-.787.442-1.079l2.511-2.511c.292-.292.678-.442 1.079-.442s.78.15 1.072.442l4.113 4.113c.284.284.442.662.442 1.063s-.158.78-.442 1.063l-2.511 2.511z"/>
+        </svg>
+        <h1>AI Social Media</h1>
+      </div>
       <nav>
         <ul>
           <li><a href="#">Anasayfa</a></li>
           <li><a href="#">Gönderiler</a></li>
           <li><a href="#">Mesajlaşma</a></li>
-          <li><a href="#">Profil</a></li>
+          <li class="dropdown">
+            <a href="#">Profil</a>
+            <div class="dropdown-content">
+              <a href="#">Profilim</a>
+              <a href="#">Ayarlar</a>
+              <a href="#">Çıkış yap</a>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -21,21 +33,25 @@
         <h2>En Popüler Gönderiler</h2>
         <ul>
           <li>
-            <h3>Gönderi Başlığı</h3>
-            <img src="image.jpg" alt="Gönderi Resmi">
-            <p>Gönderi Açıklaması</p>
-            <div class="like-comment">
-              <button><i class="fas fa-heart"></i> 10</button>
-              <button><i class="fas fa-comment"></i> 5</button>
+            <img src="profile-pic.jpg" alt="Profil Resmi">
+            <div class="post-content">
+              <h4>John Doe</h4>
+              <img src="post-image.jpg" alt="Gönderi Resmi">
+              <div class="post-actions">
+                <button class="like-button"><i class="fas fa-heart"></i> Beğen</button>
+                <button class="comment-button"><i class="fas fa-comment"></i> Yorum Yap</button>
+              </div>
             </div>
           </li>
           <li>
-            <h3>Gönderi Başlığı</h3>
-            <img src="image.jpg" alt="Gönderi Resmi">
-            <p>Gönderi Açıklaması</p>
-            <div class="like-comment">
-              <button><i class="fas fa-heart"></i> 7</button>
-              <button><i class="fas fa-comment"></i> 3</button>
+            <img src="profile-pic.jpg" alt="Profil Resmi">
+            <div class="post-content">
+              <h4>Jane Doe</h4>
+              <img src="post-image.jpg" alt="Gönderi Resmi">
+              <div class="post-actions">
+                <button class="like-button"><i class="fas fa-heart"></i> Beğen</button>
+                <button class="comment-button"><i class="fas fa-comment"></i> Yorum Yap</button>
+              </div>
             </div>
           </li>
         </ul>
@@ -44,21 +60,25 @@
         <h2>Son Gönderiler</h2>
         <ul>
           <li>
-            <h3>Gönderi Başlığı</h3>
-            <img src="image.jpg" alt="Gönderi Resmi">
-            <p>Gönderi Açıklaması</p>
-            <div class="like-comment">
-              <button><i class="fas fa-heart"></i> 2</button>
-              <button><i class="fas fa-comment"></i> 1</button>
+            <img src="profile-pic.jpg" alt="Profil Resmi">
+            <div class="post-content">
+              <h4>John Doe</h4>
+              <img src="post-image.jpg" alt="Gönderi Resmi">
+              <div class="post-actions">
+                <button class="like-button"><i class="fas fa-heart"></i> Beğen</button>
+                <button class="comment-button"><i class="fas fa-comment"></i> Yorum Yap</button>
+              </div>
             </div>
           </li>
           <li>
-            <h3>Gönderi Başlığı</h3>
-            <img src="image.jpg" alt="Gönderi Resmi">
-            <p>Gönderi Açıklaması</p>
-            <div class="like-comment">
-              <button><i class="fas fa-heart"></i> 1</button>
-              <button><i class="fas fa-comment"></i> 0</button>
+            <img src="profile-pic.jpg" alt="Profil Resmi">
+            <div class="post-content">
+              <h4>Jane Doe</h4>
+              <img src="post-image.jpg" alt="Gönderi Resmi">
+              <div class="post-actions">
+                <button class="like-button"><i class="fas fa-heart"></i> Beğen</button>
+                <button class="comment-button"><i class="fas fa-comment"></i> Yorum Yap</button>
+              </div>
             </div>
           </li>
         </ul>
